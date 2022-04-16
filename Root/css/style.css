@@ -1,0 +1,252 @@
+/* variables */
+:root {
+    --main-bg-color: linear-gradient(to left,#f4a261,#f1c0e8);
+    --footer-bg-color: #6C757D;
+    --secondary-text-color: white;
+}
+/* reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* header */
+.navbar-collapse {
+    justify-content: center
+}
+
+.logo {
+    padding-left: 14em;
+}
+
+/* globales */
+
+body {
+    min-height: 100vh;
+    background-image: var(--main-bg-color)
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 1em;
+}
+
+h2 {
+    font-size: 35px;
+    color: var(--secondary-text-color);
+    padding-left: 1em;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: 600;
+    padding: 2em;
+    text-align: center;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--secondary-text-color);
+    padding-bottom: 1em;
+}
+
+img {
+    max-width: 100%;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+/* home */
+.texto {
+    padding: 2em;
+    padding-left: 15em;
+    padding-right: 13em;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.embed-responsive-item {
+    margin-bottom: 12em;
+    margin-top: 4em;
+}
+
+/* Estampas */
+
+.estampa1:hover {
+    transform: scale(1.2);
+}
+
+.estampa2:hover {
+    transform:scale(1.2);
+}
+
+.estampa3:hover {
+    transform:scale(1.2);
+}
+
+.estampa4:hover {
+    transform:scale(1.2);
+}
+
+.galería {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 1em;
+    margin-left: 4em;
+    margin-bottom: 4rem;
+}
+
+/* tabla-lista de precios */
+
+tr {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 1em;
+    background-color: var(--footer-bg-color);
+}
+
+td {
+    border: 1px solid black;
+	border-collapse:collapse;
+    padding: 1em;
+}
+
+.tabla {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 6em;
+}
+
+/* Acordeón-preguntas */
+
+.accordion {
+    padding: 2em;
+    max-width: 70%;
+    align-items: center;
+    margin-left: 10em;
+    margin-bottom: 12em;
+}
+
+.accordion-item {
+    background-color: var(--footer-bg-color);
+}
+
+/* formulario de contacto */
+
+form {
+    justify-content: center;
+    justify-items: center;
+    font-size: 14px;
+    max-width: 20em;
+    margin: 0 auto;
+    margin-bottom: 4em;
+    gap: 1em;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.form__button {
+    width: 6em;
+    margin: 0 auto;
+    justify-content: center;
+    justify-items: center;
+    margin-bottom: 2em;
+}
+
+/* footer */
+
+footer {
+    color: var(--secondary-text-color);
+    background-color: var(--footer-bg-color);
+    height: 18vh;
+    font-size: 14px;
+} 
+
+.pie-página {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1em;
+    align-items: center;
+}
+
+/* media queries */
+
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 25px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+
+    .texto {
+        font-size: 10px;
+    }
+    
+    footer {
+        font-size: 10px;
+    }
+	
+    .galería {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+	    padding: 1em;
+        margin-left: 1em;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    table {
+        width: 25%;
+        font-size: 10px;
+    }
+
+    .accordion  {
+        margin-left: 4em;
+    }
+
+    .accordion-button {
+        font-size: 12px;
+    }
+
+    .accordion-collapse {
+        font-size: 10px;
+    }
+
+    form {
+        font-size: 12px;
+    }
+} 
