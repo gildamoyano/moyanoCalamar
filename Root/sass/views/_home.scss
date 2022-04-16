@@ -1,0 +1,40 @@
+.texto {
+    padding: 2em;
+    padding-left: 15em;
+    padding-right: 13em;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .texto {
+        padding: 2em;
+        padding-left: 15em;
+        padding-right: 13em;
+    }
+
+    .embed-responsive-item {
+        margin-bottom: 12em;
+        margin-top: 4em;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 25px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+
+    .texto {
+        font-size: 10px;
+    }
+}    

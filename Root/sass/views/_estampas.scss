@@ -1,0 +1,37 @@
+.galería {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 1em;
+    margin-left: 4em;
+    margin-bottom: 4rem;
+
+    .estampa1:hover {
+        transform: scale(1.2);
+    }
+    
+    .estampa2:hover {
+        @extend .estampa1:hover;
+    }
+    
+    .estampa3:hover {
+        @extend .estampa1:hover;
+    }
+    
+    .estampa4:hover {
+        @extend .estampa1:hover;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    h3 {
+        font-size: 18px;
+    }
+
+    .galería {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+	    padding: 1em;
+        margin-left: 1em;
+    }
+}    
